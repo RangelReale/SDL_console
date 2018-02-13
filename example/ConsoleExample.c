@@ -12,7 +12,8 @@
 */
 
 #ifdef HAVE_OPENGL
-#include <GL/glut.h>
+//#include <GL/glut.h>
+#include <SDL_opengl.h>
 #endif /* HAVE_OPENGL */
 
 #include <stdlib.h>
@@ -91,7 +92,7 @@ int main(int argc, char **argv) {
 		glMatrixMode(GL_MODELVIEW);
 		glLoadIdentity();
 		glTranslatef(0.0, 0.0, -5.0);
-		glutSolidTeapot(2.0);
+		//glutSolidTeapot(2.0);
 		glFlush();
 #else
 
