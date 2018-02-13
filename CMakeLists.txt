@@ -21,6 +21,8 @@ else ()
   message ( "found SDL_image ${SDL_IMAGE_MAJOR}.${SDL_IMAGE_MINOR}.${SDL_IMAGE_MICRO} (${SDL_IMAGE_LIBRARY_DIRS}:${SDLIMAGE_INCLUDE_DIR})" )
 endif ()
 
+add_definitions(-DHAVE_SDLIMAGE)
+
 if (BUILD_OPENGL)
   find_package(OpenGL)
 #  find_package(GLUT)
